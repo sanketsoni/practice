@@ -1,1 +1,1 @@
-# Leetcode practive problems
+# Leetcode practice problems
