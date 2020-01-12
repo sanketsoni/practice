@@ -9,7 +9,6 @@ def countPrimes(n):
     # primesRecord[i] is for interger i.
     primesRecord = [False] * n
     primesCount = 0
-    import pdb;pdb.set_trace()
     for number in range(2, n):
         if primesRecord[number] == False:
             # Cannot be divided by any smaller integer. This is
@@ -20,6 +19,7 @@ def countPrimes(n):
                     # This is a composite number.
                 primesRecord[current] = True
                 current += number
+    print ("prime record:{}".format(primesRecord))
     return primesCount
 
 if __name__ == '__main__':
